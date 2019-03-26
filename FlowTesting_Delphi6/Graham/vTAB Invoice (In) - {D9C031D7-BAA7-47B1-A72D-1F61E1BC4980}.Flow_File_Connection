@@ -1,0 +1,26 @@
+{
+  "TFloFileCon":{
+    "ModuleID":-1,
+    "FloUniqueID":"C92E05A7-5858-4350-8B9F-7B4D4DD0DCB5",
+    "FIDS":"{D9C031D7-BAA7-47B1-A72D-1F61E1BC4980}",
+    "FolderFIDS":"{43B0C670-FE0B-4736-9AC6-FA824309DC75}",
+    "ModuleName":"vTAB Invoice (In)",
+    "Version":240,
+    "FilePattern":"*.iei",
+    "FileDir":"<DefaultDir>\\vTABSeparated\\In\\",
+    "AuditDir":"<DefaultDir>\\vTABSeparated\\In\\AUDIT\\<yyyy>\\<yyyy>-<mm>\\",
+    "ErrorDir":"<DefaultDir>\\vTABSeparated\\In\\ERROR\\",
+    "AllowOverwriting":false,
+    "DefaultTransport_ENUM":"fttNone",
+    "ConvertExcel":false,
+    "UniqueFileName":true,
+    "AllowHTTPAccess":false,
+    "HTTPPostfix":"{89475BB1-F7EE-49B4-B139-E7C61FEA2531}",
+    "HTTPFileChannel_ENUM":"fctFileFolder",
+    "InboundMQId":-1,
+    "OutboundMQId":-1,
+    "InboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "OutboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "WaitFor":0
+  }
+}
