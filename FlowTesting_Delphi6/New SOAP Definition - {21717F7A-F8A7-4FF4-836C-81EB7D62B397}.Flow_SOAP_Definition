@@ -1,0 +1,38 @@
+{
+  "TFloWebSource":{
+    "ModuleID":-1,
+    "FloUniqueID":"757BB952-5329-415D-BFD6-ADDE09DE1FC8",
+    "FIDS":"{21717F7A-F8A7-4FF4-836C-81EB7D62B397}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"New SOAP Definition",
+    "Version":240,
+    "DBConID":0,
+    "FileConID":-1,
+    "FileConFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "WebConFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "DisableStringTrim":true,
+    "TruncateStrings":false,
+    "ValidateRequest":true,
+    "ValidateResponse":true,
+    "ShowNodeHints":false,
+    "TargetAsDefaultNamespace":false,
+    "AutoHandleFault":true,
+    "MoveBodyNamespaces":false,
+    "SOAPEnvelopeNamespace_ENUM":"fsnXMLSoap",
+    "MultipleRootBodyNodes":false,
+    "BodyRootNodeIndex":-1,
+    "HeaderInputWrapped":false,
+    "BodyInputWrapped":false,
+    "HeaderOutputWrapped":false,
+    "BodyOutputWrapped":false,
+    "UseXSINilForNulls":false,
+    "daDataModule1":{
+      "ClassName":"TdaDataModule",
+      "SingleFileMode":false
+    },
+    "daDataModule2":{
+      "ClassName":"TdaDataModule",
+      "SingleFileMode":false
+    }
+  }
+}
