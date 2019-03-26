@@ -1,0 +1,27 @@
+{
+  "TFloFileCon":{
+    "ModuleID":-1,
+    "FloUniqueID":"7F46685B-8CFD-47F2-B133-7191D645650E",
+    "FIDS":"{2F06035C-63A0-44B2-A577-F97B1E5751AA}",
+    "FolderFIDS":"{67296C51-A29D-490F-A7E4-EFCDB963A7D7}",
+    "ModuleName":"TTC-008_D_Flat_File",
+    "Version":240,
+    "FileName":"TTC-008_D_Flat_File_<yyyy>-<mm>-<dd>_<hh><nn><ss>_<fileNo>.csv",
+    "FilePattern":"*.csv",
+    "FileDir":"<DefaultDir>\\TTC-6\\TTC-008_D_FLAT_FILE\\",
+    "AuditDir":"<DefaultDir>\\TTC-6\\TTC-008_D_FLAT_FILE\\AUDIT\\",
+    "ErrorDir":"<DefaultDir>\\TTC-6\\TTC-008_D_FLAT_FILE\\ERROR\\",
+    "AllowOverwriting":false,
+    "DefaultTransport_ENUM":"fttNone",
+    "ConvertExcel":false,
+    "UniqueFileName":false,
+    "AllowHTTPAccess":false,
+    "HTTPPostfix":"{2F06035C-63A0-44B2-A577-F97B1E5751AA}",
+    "HTTPFileChannel_ENUM":"fctFileFolder",
+    "InboundMQId":-1,
+    "OutboundMQId":-1,
+    "InboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "OutboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "WaitFor":10
+  }
+}
