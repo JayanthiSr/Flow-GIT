@@ -1,0 +1,14 @@
+{
+  "TFloActionSchedule":{
+    "ActionFID":"{16B08D5E-4CF6-4E52-B678-7083F1788B7E}",
+    "ScheduleType_ENUM":"fstNone",
+    "SchedulePeriod_ENUM":"fspDaily",
+    "RunOnceImmediately":"false",
+    "RepeatInterval":"1",
+    "RepeatUOM":"1",
+    "DayInterval":"1",
+    "MonthDay":"1",
+    "EnableReoccurring":"false",
+    "WeekDays_ENUM":"[fdMonday, fdTuesday, fdWednesday, fdThursday, fdFriday]"
+  }
+}
