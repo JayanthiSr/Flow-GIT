@@ -1,0 +1,31 @@
+{
+  "TFloDBCon":{
+    "ModuleID":-1,
+    "FloUniqueID":"E71E34DB-9438-4595-9303-427EBE7B4F58",
+    "FIDS":"{EC61B2D7-0F28-498C-8A15-68DE07DBE6DD}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"New DB Connection",
+    "Version":240,
+    "ImportAction_ENUM":"iaAddOrIgnore",
+    "ConnectionType_ENUM":"ctMSSQL",
+    "SQLType_ENUM":"sqSQL2",
+    "ConnectionPurpose":-1,
+    "SQLDialect":1,
+    "IsTestDB":false,
+    "SingleQuoteDates":true,
+    "UseASAlias":false,
+    "ForceAlias":false,
+    "UseSingleBackQuote":false,
+    "MaxFieldAlias":35,
+    "MySQLVersion_ENUM":"fvtServer",
+    "IsPersistant":false,
+    "MinConnections":0,
+    "MaxConnections":0,
+    "MaxTranPerUpdate":0,
+    "Initialised":false,
+    "HostDB_ENUM":"hdUserDefined",
+    "DisableTransactions":false,
+    "SearchADO":false,
+    "UseCCE":true
+  }
+}
