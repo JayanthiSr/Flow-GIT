@@ -1,0 +1,26 @@
+{
+  "TFloFileCon":{
+    "ModuleID":-1,
+    "FloUniqueID":"17AB757A-C6CB-4986-84B8-F3C912E2FAF1",
+    "FIDS":"{ED4B9282-539F-4FD1-8B2D-E5FEA32DE6B9}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"Excel_MultiSheet_D",
+    "Version":240,
+    "FileName":"MultiSheet_<Datestamp>_<FileNo>.xls",
+    "FileDir":"<DefaultDir>\\Excel\\",
+    "AuditDir":"<DefaultDir>\\Excel\\AUDIT\\",
+    "ErrorDir":"<DefaultDir>\\Excel\\ERROR\\",
+    "AllowOverwriting":false,
+    "DefaultTransport_ENUM":"fttNone",
+    "ConvertExcel":false,
+    "UniqueFileName":false,
+    "AllowHTTPAccess":false,
+    "HTTPPostfix":"{ED4B9282-539F-4FD1-8B2D-E5FEA32DE6B9}",
+    "HTTPFileChannel_ENUM":"fctFileFolder",
+    "InboundMQId":-1,
+    "OutboundMQId":-1,
+    "InboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "OutboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "WaitFor":10
+  }
+}
