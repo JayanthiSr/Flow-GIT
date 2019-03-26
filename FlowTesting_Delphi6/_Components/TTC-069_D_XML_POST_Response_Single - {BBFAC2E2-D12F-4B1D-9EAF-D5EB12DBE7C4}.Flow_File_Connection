@@ -1,0 +1,33 @@
+{
+  "TFloFileCon":{
+    "ModuleID":-1,
+    "FloUniqueID":"951AC9D7-C4D1-4427-8BAE-41F08D792B5B",
+    "FIDS":"{BBFAC2E2-D12F-4B1D-9EAF-D5EB12DBE7C4}",
+    "FolderFIDS":"{67296C51-A29D-490F-A7E4-EFCDB963A7D7}",
+    "ModuleName":"TTC-069_D_XML_POST_Response_Single",
+    "Version":240,
+    "FileName_LARGETEXT":[
+    "TTC-069_D_XML_POST_Response_Single_<yyyy>-<mm>-<dd>_<hh><nn><ss>",
+    "_<fileNo>.xml"
+    ],
+    "FilePattern":"*.xml",
+    "FileDir":"<DefaultDir>\\TTC-063\\TTC-069_D_XML_POST_Response_Single\\",
+    "AuditDir_LARGETEXT":[
+    "<DefaultDir>\\TTC-063\\TTC-069_D_XML_POST_Response_Single\\AUDIT\\<y",
+    "yyy>\\<mm>\\<dd>\\"
+    ],
+    "ErrorDir":"<DefaultDir>\\TTC-063\\TTC-069_D_XML_POST_Response_Single\\ERROR\\",
+    "AllowOverwriting":false,
+    "DefaultTransport_ENUM":"fttNone",
+    "ConvertExcel":false,
+    "UniqueFileName":false,
+    "AllowHTTPAccess":false,
+    "HTTPPostfix":"{74FF5F7A-7E51-4C44-9AD7-31240FFB01CE}",
+    "HTTPFileChannel_ENUM":"fctFileFolder",
+    "InboundMQId":-1,
+    "OutboundMQId":-1,
+    "InboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "OutboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "WaitFor":10
+  }
+}
