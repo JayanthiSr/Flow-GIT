@@ -1,0 +1,11 @@
+{
+  "TFloFolder":{
+    "ModuleID":-1,
+    "FloUniqueID":"7F9DEF44-6D67-4917-AEC3-59BAE2D61FF3",
+    "FIDS":"{7610A150-127B-41E3-B0DF-8C963EEEA8C7}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"vTAB_Separated to Excel",
+    "Version":240,
+    "Description":"Flow components for VT separated filat files"
+  }
+}
