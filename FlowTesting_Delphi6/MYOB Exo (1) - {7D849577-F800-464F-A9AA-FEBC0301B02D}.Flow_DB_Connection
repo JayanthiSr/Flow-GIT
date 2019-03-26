@@ -1,0 +1,33 @@
+{
+  "TFloDBCon":{
+    "ModuleID":-1,
+    "FloUniqueID":"FEA05B37-604E-4A7B-81DF-92892956D7C2",
+    "FIDS":"{7D849577-F800-464F-A9AA-FEBC0301B02D}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"MYOB Exo (1)",
+    "Version":240,
+    "ImportAction_ENUM":"iaAddOrIgnore",
+    "ConnectionType_ENUM":"ctMSSQL",
+    "SQLType_ENUM":"sqSQL2",
+    "ConnectionPurpose":-1,
+    "SQLDialect":1,
+    "Hostname":"JAY_LAPTOP\\FLOW",
+    "Database":"Data_Demo_Sep2012",
+    "IsTestDB":false,
+    "SingleQuoteDates":true,
+    "UseASAlias":false,
+    "ForceAlias":false,
+    "UseSingleBackQuote":false,
+    "MaxFieldAlias":35,
+    "MySQLVersion_ENUM":"fvtServer",
+    "IsPersistant":false,
+    "MinConnections":0,
+    "MaxConnections":0,
+    "MaxTranPerUpdate":0,
+    "Initialised":false,
+    "HostDB_ENUM":"hdUserDefined",
+    "DisableTransactions":false,
+    "SearchADO":false,
+    "UseCCE":true
+  }
+}
