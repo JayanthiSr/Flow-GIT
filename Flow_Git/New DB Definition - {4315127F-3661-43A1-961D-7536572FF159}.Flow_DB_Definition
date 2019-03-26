@@ -1,0 +1,33 @@
+{
+  "TFloDBSource":{
+    "ModuleID":-1,
+    "FloUniqueID":"7C41922B-CF96-4CEA-A54E-BD6CCA93CEE5",
+    "FIDS":"{4315127F-3661-43A1-961D-7536572FF159}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"New DB Definition",
+    "Version":240,
+    "DBConID":0,
+    "FileConID":-1,
+    "FileConFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "WebConFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "DisableStringTrim":true,
+    "TruncateStrings":false,
+    "IDManagement_ENUM":"fimNone",
+    "UpdateIDFields":false,
+    "UpdateStatus_ENUM":"rhUpdate",
+    "SaveNullFieldAsBlank":false,
+    "SaveBlankFieldAsNull":false,
+    "ForceNullToSQL":false,
+    "UseInMemoryCheck":false,
+    "AllowDirtyReadsForChecks":false,
+    "DisableTransactions":false,
+    "daDataModule1":{
+      "ClassName":"TdaDataModule",
+      "SingleFileMode":false
+    },
+    "daDataModule2":{
+      "ClassName":"TdaDataModule",
+      "SingleFileMode":false
+    }
+  }
+}
