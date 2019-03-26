@@ -1,0 +1,25 @@
+{
+  "TFloFileCon":{
+    "ModuleID":-1,
+    "FloUniqueID":"685F2B87-7715-402F-87A6-3DC311210397",
+    "FIDS":"{ED4B9282-539F-4FD1-8B2D-E5FEA32DE6B9}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"New File Connection",
+    "Version":240,
+    "FileDir":"<DefaultDir>\\",
+    "AuditDir":"<DefaultDir>\\",
+    "ErrorDir":"<DefaultDir>\\",
+    "AllowOverwriting":false,
+    "DefaultTransport_ENUM":"fttNone",
+    "ConvertExcel":false,
+    "UniqueFileName":false,
+    "AllowHTTPAccess":false,
+    "HTTPPostfix":"{ED4B9282-539F-4FD1-8B2D-E5FEA32DE6B9}",
+    "HTTPFileChannel_ENUM":"fctFileFolder",
+    "InboundMQId":-1,
+    "OutboundMQId":-1,
+    "InboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "OutboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "WaitFor":10
+  }
+}
