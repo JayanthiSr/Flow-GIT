@@ -1,0 +1,11 @@
+{
+  "TFloFolder":{
+    "ModuleID":-1,
+    "FloUniqueID":"82C13F50-BF6D-4712-A3B5-30D6E83ADE11",
+    "FIDS":"{BF49EFB9-A026-409F-9C20-CD1973C709CE}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"WW_Generic",
+    "Version":240,
+    "Description":"Contains all WW artefacts common to all trading partners "
+  }
+}
