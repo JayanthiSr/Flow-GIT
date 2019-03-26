@@ -1,0 +1,28 @@
+{
+  "TFloParameterGroup":{
+    "ModuleID":-1,
+    "FloUniqueID":"6266F3D7-A09C-425D-9FD0-BCA93C037B03",
+    "FIDS":"{E0A2E36F-0126-499C-9578-F72C08876B59}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"Environment",
+    "Version":240,
+    "ENVIRONMENT":{
+      "ClassName":"TFloPersistentParam",
+      "FriendlyName":"Delphi Version",
+      "OperatorString":"=",
+      "Value":2006,
+      "Code":"ENVIRONMENT",
+      "ParamType_ENUM":"ftString",
+      "DefaultValue":2006
+    },
+    "BUILD":{
+      "ClassName":"TFloPersistentParam",
+      "FriendlyName":"Flow Build - eg 240b 916",
+      "OperatorString":"=",
+      "Value":"240.b (916)",
+      "Code":"BUILD",
+      "ParamType_ENUM":"ftString",
+      "DefaultValue":"240.b (916)"
+    }
+  }
+}
