@@ -1,0 +1,156 @@
+{
+  "TFloSourceMap":{
+    "ModuleID":-1,
+    "FloUniqueID":"78C353EA-225B-401F-88BF-2CA5A151F9FD",
+    "FIDS":"{2F84D99D-FFF2-42E2-831A-709525F1FC86}",
+    "FolderFIDS":"{67296C51-A29D-490F-A7E4-EFCDB963A7D7}",
+    "ModuleName":"TTC-066_JSON_GET_Multiple",
+    "Version":240,
+    "SourceType_ENUM":"fstDatabase",
+    "SourceID":-1,
+    "DestType_ENUM":"fstFile",
+    "DestID":-1,
+    "SourceFIDS":"{DF1DEB34-B21D-488D-834A-39EA9FD6F1A8}",
+    "DestFIDS":"{06C46C32-1F0F-4FCD-A68F-A740C2D821D8}",
+    "Initialised":true,
+    "SourceChanged":false,
+    "FloViewMap1":{
+      "ClassName":"TFloViewMap",
+      "Description":"HTTP",
+      "CompiledStatus":0,
+      "FloFieldMap1":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"ID",
+        "FloFieldType_ENUM":"fftPrimaryKeyAuto"
+      },
+      "FloFieldMap2":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MASTER_ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"MASTER_ID",
+        "FloFieldType_ENUM":"fftForeignKey"
+      },
+      "FloFieldMap3":{
+        "ClassName":"TFloFieldMap",
+        "Description":"HTTP_status_code",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/HTTP_status_code",
+        "begin",
+        "  Value := 200;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"HTTP_status_code",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap4":{
+        "ClassName":"TFloFieldMap",
+        "Description":"HTTP_reason",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/HTTP_reason",
+        "begin",
+        "  Value := '#39'Success'#39';",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"HTTP_reason",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap5":{
+        "ClassName":"TFloFieldMap",
+        "Description":"HTTP_body",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/HTTP_body",
+        "var",
+        "  jsonBody, jsonData : TJSONObject;",
+        "  jsonDataArray      : TJSONArray;",
+        "begin",
+        "  jsonBody := TJSONObject.Create;",
+        "  try",
+        "    jsonDataArray := jsonBody.AddArray('#39'data'#39');",
+        "",
+        "    while (not TTC_063_SourceData.EOF) do",
+        "    begin",
+        "      jsonData := jsonDataArray.AddObject;",
+        "      jsonData.AddString('#39'ClusteredKey'#39',       TTC_063_SourceData['#39'ClusteredKey'#39'].AsString);",
+        "      jsonData.AddString('#39'PrimaryKey'#39',         TTC_063_SourceData['#39'PrimaryKey'#39'].AsString);",
+        "      jsonData.AddString('#39'IntData'#39',            TTC_063_SourceData['#39'IntData'#39'].AsString);",
+        "      jsonData.AddString('#39'FloatData'#39',          TTC_063_SourceData['#39'FloatData'#39'].AsString);",
+        "      jsonData.AddString('#39'BitData'#39',            TTC_063_SourceData['#39'BitData'#39'].AsString);",
+        "      jsonData.AddString('#39'DateData'#39',           TTC_063_SourceData['#39'DateData'#39'].AsString);",
+        "      jsonData.AddString('#39'DateTimeData'#39',       TTC_063_SourceData['#39'DateTimeData'#39'].AsString);",
+        "      jsonData.AddString('#39'DateTimeOffsetData'#39', TTC_063_SourceData['#39'DateTimeOffsetData'#39'].AsString);",
+        "      jsonData.AddString('#39'StringData'#39',         TTC_063_SourceData['#39'StringData'#39'].AsString);",
+        "      jsonData.AddString('#39'MemoData'#39',           TTC_063_SourceData['#39'MemoData'#39'].AsString);",
+        "",
+        "      LogInfo('#39'Body:'#39'#13#10 + jsonData.AsDisplayText);",
+        "      Value := jsonData.AsString;",
+        "",
+        "      TTC_063_SourceData.Next;",
+        "    end;",
+        "  finally",
+        "    jsonData      := nil;",
+        "    jsonDataArray := nil;",
+        "",
+        "    jsonBody.Free;",
+        "    jsonBody := nil;",
+        "  end;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"HTTP_body",
+        "FloFieldType_ENUM":"fftUserSet"
+      }
+    },
+    "FloViewMap2":{
+      "ClassName":"TFloViewMap",
+      "Description":"HEADER",
+      "BeforeMapFormula.Strings_STRINGLIST":[
+      "procedure BeforeMapEvent(var Value:Variant);  \/\/HEADER",
+      "begin",
+      "  Value := False; \/\/ We populate this manually in HTTP OnEndMap.",
+      "end;"
+      ],
+      "CompiledStatus":1,
+      "FloFieldMap6":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap2.Owner",
+        "FieldName":"ID",
+        "FloFieldType_ENUM":"fftPrimaryKeyAuto"
+      },
+      "FloFieldMap7":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MASTER_ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap2.Owner",
+        "FieldName":"MASTER_ID",
+        "FloFieldType_ENUM":"fftForeignKey"
+      },
+      "FloFieldMap8":{
+        "ClassName":"TFloFieldMap",
+        "Description":"header_name",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap2.Owner",
+        "FieldName":"header_name",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap9":{
+        "ClassName":"TFloFieldMap",
+        "Description":"header_header",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap2.Owner",
+        "FieldName":"header_header",
+        "FloFieldType_ENUM":"fftUserSet"
+      }
+    }
+  }
+}
