@@ -1,0 +1,11 @@
+{
+  "TFloFolder":{
+    "ModuleID":-1,
+    "FloUniqueID":"1DB0146F-A568-4CC7-A5AF-13C57D31432E",
+    "FIDS":"{FCD6B16D-9ACA-4B8C-92CC-B65827510B6E}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"GS_Giesens",
+    "Version":240,
+    "Description":"Contains the Artefacts specific to Giesens"
+  }
+}
