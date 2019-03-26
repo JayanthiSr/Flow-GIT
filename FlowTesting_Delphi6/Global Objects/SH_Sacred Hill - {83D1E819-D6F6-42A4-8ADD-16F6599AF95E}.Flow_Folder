@@ -1,0 +1,11 @@
+{
+  "TFloFolder":{
+    "ModuleID":-1,
+    "FloUniqueID":"AE656256-06DC-4FEC-8AF4-C57497EA84F5",
+    "FIDS":"{83D1E819-D6F6-42A4-8ADD-16F6599AF95E}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"SH_Sacred Hill",
+    "Version":240,
+    "Description":"Contains the Artefacts specific to Sacred Hill"
+  }
+}
