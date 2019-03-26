@@ -1,0 +1,9 @@
+{
+  "TFloActionNotification":{
+    "AdminEmail":"dean.daly@flowsoftware.com",
+    "CancelEmail":"dean.daly@flowsoftware.com",
+    "ErrorEmail":"dean.daly@flowsoftware.com",
+    "WarningEmail":"dean.daly@flowsoftware.com",
+    "UseDefaultEmail":"true"
+  }
+}
