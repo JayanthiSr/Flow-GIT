@@ -1,0 +1,11 @@
+{
+  "TFloFolder":{
+    "ModuleID":-1,
+    "FloUniqueID":"08890C0F-0C07-4F53-B128-CCBCA0968CA9",
+    "FIDS":"{B0A96006-E7A7-4405-8707-F84E8A9DD5EB}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"CO _Constellation Brands",
+    "Version":240,
+    "Description":"Contains the Artefacts specific to Constellation Brands"
+  }
+}
