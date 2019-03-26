@@ -1,0 +1,11 @@
+{
+  "TFloFolder":{
+    "ModuleID":-1,
+    "FloUniqueID":"20039966-5B01-4C4A-9B28-040953E7925F",
+    "FIDS":"{779261BF-90F5-4DFD-82B3-92C9D4B81467}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"1. Success",
+    "Version":240,
+    "Description":"Successful Tests"
+  }
+}
