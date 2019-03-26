@@ -1,0 +1,129 @@
+{
+  "TFloSourceMap":{
+    "ModuleID":-1,
+    "FloUniqueID":"429912CC-9F87-4BA5-809F-1A3455FC5783",
+    "FIDS":"{D8C83698-3FCB-47B8-932A-7147450AEC45}",
+    "FolderFIDS":"{67296C51-A29D-490F-A7E4-EFCDB963A7D7}",
+    "ModuleName":"TTC-056_XLSX_to_XLS_File",
+    "Version":240,
+    "SourceType_ENUM":"fstFile",
+    "SourceID":-1,
+    "DestType_ENUM":"fstFile",
+    "DestID":-1,
+    "SourceFIDS":"{9C932C7E-6C47-4141-9EB0-05946FA36A3C}",
+    "DestFIDS":"{19F82948-14D4-459B-B462-1DA59D19D136}",
+    "Initialised":true,
+    "SourceChanged":false,
+    "FloViewMap1":{
+      "ClassName":"TFloViewMap",
+      "Description":"SUPPLIERS",
+      "LinkedDataFormula.Strings_STRINGLIST":[
+      "procedure LinkedDataEvent(var LinkedData:TdaQueryDataView);  \/\/SUPPLIERS",
+      "begin",
+      "  LinkedData := SUPPLIERS;",
+      "end;"
+      ],
+      "CompiledStatus":1,
+      "FloFieldMap1":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"ID",
+        "FloFieldType_ENUM":"fftPrimaryKeyAuto"
+      },
+      "FloFieldMap2":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MASTER_ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"MASTER_ID",
+        "FloFieldType_ENUM":"fftForeignKey"
+      },
+      "FloFieldMap3":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ACCOUNT_NUMBER",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ACCOUNT_NUMBER",
+        "begin",
+        "  Value := SUPPLIERS['#39'ACCOUNT_NUMBER'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"ACCOUNT_NUMBER",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap4":{
+        "ClassName":"TFloFieldMap",
+        "Description":"NAME",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/NAME",
+        "begin",
+        "  Value := SUPPLIERS['#39'NAME'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"NAME",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap5":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ADDRESS",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ADDRESS",
+        "begin",
+        "  Value := SUPPLIERS['#39'ADDRESS'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"ADDRESS",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap6":{
+        "ClassName":"TFloFieldMap",
+        "Description":"PHONE",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/PHONE",
+        "begin",
+        "  Value := SUPPLIERS['#39'PHONE'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"PHONE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap7":{
+        "ClassName":"TFloFieldMap",
+        "Description":"FAX",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/FAX",
+        "begin",
+        "  Value := SUPPLIERS['#39'FAX'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"FAX",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap8":{
+        "ClassName":"TFloFieldMap",
+        "Description":"EMAIL",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/EMAIL",
+        "begin",
+        "  Value := SUPPLIERS['#39'EMAIL'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"EMAIL",
+        "FloFieldType_ENUM":"fftUserSet"
+      }
+    }
+  }
+}
