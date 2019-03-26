@@ -1,0 +1,11 @@
+{
+  "TFloFolder":{
+    "ModuleID":-1,
+    "FloUniqueID":"E32C49BA-8C18-4DB9-8DF5-68F4335AE945",
+    "FIDS":"{A8CE1C66-0D9F-405F-9021-6C67E3A510AF}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"Excel To \/ From Files ",
+    "Version":240,
+    "Description":"Mapping Excel file to filefiles and visa versa"
+  }
+}
