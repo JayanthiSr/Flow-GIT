@@ -1,0 +1,43 @@
+{
+  "TFloActionManager":{
+    "ModuleID":-1,
+    "FloUniqueID":"D67A690E-AC54-45A3-819C-57F753E9F09C",
+    "FIDS":"{3D5DE4B0-EAEB-4BDC-A04B-DEE3E3675F67}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"New Action",
+    "Version":240,
+    "LinkedAction":0,
+    "LinkedActionFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "MonitorPOP":false,
+    "MonitorFTP":false,
+    "MonitorDX":false,
+    "MonitorLAN":false,
+    "MonitorHTTP":false,
+    "IgnoreCancel":false,
+    "StopButIndicateSuccess":false,
+    "ReprocessUntilError":false,
+    "AllowPause":false,
+    "CacheAction":false,
+    "IgnoreErrorsBetweenPartners":true,
+    "RunPerPartner":true,
+    "DeterminePartnerFromFile":true,
+    "ProcessExisting":true,
+    "SaveLogStatuses_ENUM":"[flsOK, flsWarning, flsError]",
+    "SendNotificationStatuses_ENUM":"[flsWarning, flsError]",
+    "AllowMultiThreading":false,
+    "MaxThreadsPerAction":0,
+    "EDINetworkId":-1,
+    "ActionPurpose_ENUM":"fptExport",
+    "MainDBConID":-1,
+    "MainDBConFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "PrecheckData":false,
+    "LogSQL":true,
+    "LogFileEvents":true,
+    "LogInfoItems":true,
+    "LogWebServices":true,
+    "UseUniqueSubActionLogs":false,
+    "TFloSourceManager":{
+
+    }
+  }
+}
