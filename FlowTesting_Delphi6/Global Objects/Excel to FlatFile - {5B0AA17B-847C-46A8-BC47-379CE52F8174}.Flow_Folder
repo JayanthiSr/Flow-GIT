@@ -1,0 +1,10 @@
+{
+  "TFloFolder":{
+    "ModuleID":-1,
+    "FloUniqueID":"6A269CE1-1EE6-49C4-A0D8-4B6EFAB01BE6",
+    "FIDS":"{5B0AA17B-847C-46A8-BC47-379CE52F8174}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"Excel to FlatFile",
+    "Version":240
+  }
+}
