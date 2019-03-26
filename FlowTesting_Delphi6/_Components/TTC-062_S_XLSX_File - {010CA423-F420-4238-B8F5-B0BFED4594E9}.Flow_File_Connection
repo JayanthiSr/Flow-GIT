@@ -1,0 +1,27 @@
+{
+  "TFloFileCon":{
+    "ModuleID":-1,
+    "FloUniqueID":"1F6DFB9B-E7F4-45E5-956B-ABEDFDE8774E",
+    "FIDS":"{010CA423-F420-4238-B8F5-B0BFED4594E9}",
+    "FolderFIDS":"{67296C51-A29D-490F-A7E4-EFCDB963A7D7}",
+    "ModuleName":"TTC-062_S_XLSX_File",
+    "Version":240,
+    "FileName":"TTC-062_S_XLSX_File_<yyyy>-<mm>-<dd>_<hh><nn><ss>_<fileNo>.xlsx",
+    "FilePattern":"*.xlsx",
+    "FileDir":"<DefaultDir>\\TTC-57\\TTC-062_S_XLSX_FILE\\",
+    "AuditDir":"<DefaultDir>\\TTC-57\\TTC-062_S_XLSX_FILE\\AUDIT\\",
+    "ErrorDir":"<DefaultDir>\\TTC-57\\TTC-062_S_XLSX_FILE\\ERROR\\",
+    "AllowOverwriting":false,
+    "DefaultTransport_ENUM":"fttNone",
+    "ConvertExcel":false,
+    "UniqueFileName":false,
+    "AllowHTTPAccess":false,
+    "HTTPPostfix":"{2B9044AB-8B86-460A-BF68-1C064B974AAB}",
+    "HTTPFileChannel_ENUM":"fctFileFolder",
+    "InboundMQId":-1,
+    "OutboundMQId":-1,
+    "InboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "OutboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "WaitFor":10
+  }
+}
