@@ -1,0 +1,9 @@
+{
+  "TFloActionNotification":{
+    "AdminEmail":"Ernie.Scherf@wineworks.co.nz,warehouse.ak@wineworks.co.nz",
+    "CancelEmail":"Ernie.Scherf@wineworks.co.nz,warehouse.ak@wineworks.co.nz",
+    "ErrorEmail":"Ernie.Scherf@wineworks.co.nz,warehouse.ak@wineworks.co.nz",
+    "WarningEmail":"Ernie.Scherf@wineworks.co.nz,warehouse.ak@wineworks.co.nz",
+    "UseDefaultEmail":"false"
+  }
+}
