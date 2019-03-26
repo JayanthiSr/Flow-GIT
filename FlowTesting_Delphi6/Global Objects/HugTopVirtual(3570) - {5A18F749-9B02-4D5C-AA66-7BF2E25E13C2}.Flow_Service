@@ -1,0 +1,16 @@
+{
+  "TFloRegService":{
+    "ModuleID":-1,
+    "FloUniqueID":"95690726-DC9C-4D72-886B-E13BFF0BF097",
+    "FIDS":"{5A18F749-9B02-4D5C-AA66-7BF2E25E13C2}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"HugTopVirtual(3570)",
+    "Version":240,
+    "ServerName":"HugTopVirtual",
+    "Port":3570,
+    "ServiceUser":".\\",
+    "CreateWinSession":false,
+    "ServiceType_ENUM":"frtDevelopment",
+    "BackupServiceFIDS":"{00000000-0000-0000-0000-000000000000}"
+  }
+}
