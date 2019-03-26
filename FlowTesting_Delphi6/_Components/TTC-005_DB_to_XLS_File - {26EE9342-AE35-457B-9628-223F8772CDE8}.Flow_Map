@@ -1,0 +1,185 @@
+{
+  "TFloSourceMap":{
+    "ModuleID":-1,
+    "FloUniqueID":"3A8DAAA7-BC15-4610-BAC8-609B593BCC32",
+    "FIDS":"{26EE9342-AE35-457B-9628-223F8772CDE8}",
+    "FolderFIDS":"{67296C51-A29D-490F-A7E4-EFCDB963A7D7}",
+    "ModuleName":"TTC-005_DB_to_XLS_File",
+    "Version":240,
+    "SourceType_ENUM":"fstDatabase",
+    "SourceID":-1,
+    "DestType_ENUM":"fstFile",
+    "DestID":-1,
+    "SourceFIDS":"{ABAD3F94-031B-4791-9F2D-B33E17BF8EAA}",
+    "DestFIDS":"{69FC9747-AED8-45C4-92F1-66F496F5F643}",
+    "Initialised":true,
+    "SourceChanged":false,
+    "FloViewMap1":{
+      "ClassName":"TFloViewMap",
+      "Description":"TTC_4_EXCEL_FILE",
+      "LinkedDataFormula.Strings_STRINGLIST":[
+      "procedure LinkedDataEvent(var LinkedData:TdaQueryDataView);  \/\/TTC_4_EXCEL_FILE",
+      "begin",
+      "  LinkedData := TTC_1_SourceData;",
+      "end;"
+      ],
+      "CompiledStatus":1,
+      "FloFieldMap1":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"ID",
+        "FloFieldType_ENUM":"fftPrimaryKeyAuto"
+      },
+      "FloFieldMap2":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MASTER_ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"MASTER_ID",
+        "FloFieldType_ENUM":"fftForeignKey"
+      },
+      "FloFieldMap3":{
+        "ClassName":"TFloFieldMap",
+        "Description":"CLUSTERED_KEY",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/CLUSTERED_KEY",
+        "begin",
+        "  Value := TTC_1_SourceData['#39'ClusteredKey'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"CLUSTERED_KEY",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap4":{
+        "ClassName":"TFloFieldMap",
+        "Description":"PRIMARY_KEY",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/PRIMARY_KEY",
+        "begin",
+        "  Value := TTC_1_SourceData['#39'PrimaryKey'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"PRIMARY_KEY",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap5":{
+        "ClassName":"TFloFieldMap",
+        "Description":"INT_DATA",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/INT_DATA",
+        "begin",
+        "  Value := TTC_1_SourceData['#39'IntData'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"INT_DATA",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap6":{
+        "ClassName":"TFloFieldMap",
+        "Description":"FLOAT_DATA",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/FLOAT_DATA",
+        "begin",
+        "  Value := TTC_1_SourceData['#39'FloatData'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"FLOAT_DATA",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap7":{
+        "ClassName":"TFloFieldMap",
+        "Description":"BIT_DATA",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/BIT_DATA",
+        "begin",
+        "  Value := TTC_1_SourceData['#39'BitData'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"BIT_DATA",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap8":{
+        "ClassName":"TFloFieldMap",
+        "Description":"DATE_DATA",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/DATE_DATA",
+        "begin",
+        "  Value := TTC_1_SourceData['#39'DateData'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"DATE_DATA",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap9":{
+        "ClassName":"TFloFieldMap",
+        "Description":"DATETIME_DATA",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/DATETIME_DATA",
+        "begin",
+        "  Value := TTC_1_SourceData['#39'DateTimeData'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"DATETIME_DATA",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap10":{
+        "ClassName":"TFloFieldMap",
+        "Description":"DATETIMEOFFSET_DATA",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/DATETIMEOFFSET_DATA",
+        "begin",
+        "  Value := TTC_1_SourceData['#39'DateTimeOffsetData'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"DATETIMEOFFSET_DATA",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap11":{
+        "ClassName":"TFloFieldMap",
+        "Description":"STRING_DATA",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/STRING_DATA",
+        "begin",
+        "  Value := TTC_1_SourceData['#39'StringData'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"STRING_DATA",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap12":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MEMO_DATA",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/MEMO_DATA",
+        "begin",
+        "  Value := TTC_1_SourceData['#39'MemoData'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"MEMO_DATA",
+        "FloFieldType_ENUM":"fftUserSet"
+      }
+    }
+  }
+}
