@@ -1,0 +1,11 @@
+{
+  "TFloFolder":{
+    "ModuleID":-1,
+    "FloUniqueID":"32AFA10A-29F8-4280-8BEC-A020E962AF0E",
+    "FIDS":"{C263CF8E-9594-4036-BECC-2FC1100C9823}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"Cyrus",
+    "Version":240,
+    "Description":"Cyrus'#39's Personal Testing"
+  }
+}
