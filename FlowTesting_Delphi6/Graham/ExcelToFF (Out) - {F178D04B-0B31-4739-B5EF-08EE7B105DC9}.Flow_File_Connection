@@ -1,0 +1,27 @@
+{
+  "TFloFileCon":{
+    "ModuleID":-1,
+    "FloUniqueID":"7C00AFF0-39C8-4D38-94B3-492AE5D8714D",
+    "FIDS":"{F178D04B-0B31-4739-B5EF-08EE7B105DC9}",
+    "FolderFIDS":"{43B0C670-FE0B-4736-9AC6-FA824309DC75}",
+    "ModuleName":"ExcelToFF (Out)",
+    "Version":240,
+    "FileName":"FlatFileFromExcel_<datestamp>.txt",
+    "FilePattern":"*.txt",
+    "FileDir":"<DefaultDir>\\ExcelToFF\\OUT\\",
+    "AuditDir":"<DefaultDir>\\ExcelToFF\\OUT\\AUDIT\\<yyyy>\\<yyyy>-<mm>\\",
+    "ErrorDir":"<DefaultDir>\\ExcelToFF\\OUT\\ERROR\\",
+    "AllowOverwriting":false,
+    "DefaultTransport_ENUM":"fttNone",
+    "ConvertExcel":false,
+    "UniqueFileName":true,
+    "AllowHTTPAccess":false,
+    "HTTPPostfix":"{B5BDA7B5-CAB8-432D-A51D-D56E1D46624B}",
+    "HTTPFileChannel_ENUM":"fctFileFolder",
+    "InboundMQId":-1,
+    "OutboundMQId":-1,
+    "InboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "OutboundMQFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "WaitFor":10
+  }
+}
