@@ -1,0 +1,240 @@
+{
+  "TFloSourceMap":{
+    "ModuleID":-1,
+    "FloUniqueID":"4C0D4060-45D4-400C-84C1-36E6BFAF368F",
+    "FIDS":"{FD56A977-4ECE-42A0-A505-81368094B73E}",
+    "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
+    "ModuleName":"Excel_MultiSheet_D",
+    "Version":240,
+    "SourceType_ENUM":"fstDatabase",
+    "SourceID":-1,
+    "DestType_ENUM":"fstFile",
+    "DestID":-1,
+    "SourceFIDS":"{4315127F-3661-43A1-961D-7536572FF159}",
+    "DestFIDS":"{8AFEF691-D68F-4241-9E20-ABDBAE4DD059}",
+    "Initialised":true,
+    "SourceChanged":false,
+    "FloViewMap1":{
+      "ClassName":"TFloViewMap",
+      "Description":"FIRST_SHEET",
+      "BeforeMapFormula.Strings_STRINGLIST":[
+      "procedure BeforeMapEvent(var Value:Variant);  \/\/FIRST_SHEET",
+      "begin",
+      "  Value := False;",
+      "  \/\/ rows will be added in AfterDetailMap",
+      "end;"
+      ],
+      "AfterDetailMapFormula.Strings_STRINGLIST":[
+      "procedure AfterDetailMapEvent(var Value:Variant);  \/\/FIRST_SHEET",
+      "var",
+      "  r: integer;",
+      "begin",
+      "  for r := 2 to 11 do",
+      "    begin",
+      "    D_FIRST_SHEET.Insert;",
+      "    D_FIRST_SHEET['#39'COL_A'#39'].Value := '#39'Sh1 A'#39' + IntToStr(r);",
+      "    D_FIRST_SHEET['#39'COL_B'#39'].Value := 100.00 + (r \/ 100.00);",
+      "    D_FIRST_SHEET.Post;",
+      "    end;",
+      "end;"
+      ],
+      "CompiledStatus":1,
+      "FloFieldMap1":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"ID",
+        "FloFieldType_ENUM":"fftPrimaryKeyAuto"
+      },
+      "FloFieldMap2":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MASTER_ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"MASTER_ID",
+        "FloFieldType_ENUM":"fftForeignKey"
+      },
+      "FloFieldMap3":{
+        "ClassName":"TFloFieldMap",
+        "Description":"COL_A",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"COL_A",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap4":{
+        "ClassName":"TFloFieldMap",
+        "Description":"COL_B",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap1.Owner",
+        "FieldName":"COL_B",
+        "FloFieldType_ENUM":"fftUserSet"
+      }
+    },
+    "FloViewMap2":{
+      "ClassName":"TFloViewMap",
+      "Description":"SECOND_SHEET_HEADER",
+      "CompiledStatus":0,
+      "FloFieldMap5":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap2.Owner",
+        "FieldName":"ID",
+        "FloFieldType_ENUM":"fftPrimaryKeyAuto"
+      },
+      "FloFieldMap6":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MASTER_ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap2.Owner",
+        "FieldName":"MASTER_ID",
+        "FloFieldType_ENUM":"fftForeignKey"
+      },
+      "FloFieldMap7":{
+        "ClassName":"TFloFieldMap",
+        "Description":"D4",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/D4",
+        "begin",
+        "  Value := '#39'Sh2 Dee_2'#39';",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap2.Owner",
+        "FieldName":"D4",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap8":{
+        "ClassName":"TFloFieldMap",
+        "Description":"D5",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/D5",
+        "begin",
+        "  Value := '#39'Deethree'#39';",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap2.Owner",
+        "FieldName":"D5",
+        "FloFieldType_ENUM":"fftUserSet"
+      }
+    },
+    "FloViewMap3":{
+      "ClassName":"TFloViewMap",
+      "Description":"SECOND_SHEET_LINES",
+      "BeforeMapFormula.Strings_STRINGLIST":[
+      "procedure BeforeMapEvent(var Value:Variant);  \/\/SECOND_SHEET_LINES",
+      "begin",
+      "  Value := False;",
+      "  \/\/ rows will be added in AfterDetailMap",
+      "end;"
+      ],
+      "AfterDetailMapFormula.Strings_STRINGLIST":[
+      "procedure AfterDetailMapEvent(var Value:Variant);  \/\/SECOND_SHEET_LINES",
+      "var",
+      "  r: integer;",
+      "begin",
+      "  for r := 8 to 18 do",
+      "    begin",
+      "    D_SECOND_SHEET_LINES.Insert;",
+      "    D_SECOND_SHEET_LINES['#39'COLUMN_B'#39'].Value := '#39'Sh2 B'#39' + IntToStr(r);",
+      "    D_SECOND_SHEET_LINES['#39'COL_F'#39'].Value := IntToStr(r);",
+      "    D_SECOND_SHEET_LINES.Post;",
+      "    end;",
+      "end;"
+      ],
+      "CompiledStatus":1,
+      "FloFieldMap9":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap3.Owner",
+        "FieldName":"ID",
+        "FloFieldType_ENUM":"fftPrimaryKeyAuto"
+      },
+      "FloFieldMap10":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MASTER_ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap3.Owner",
+        "FieldName":"MASTER_ID",
+        "FloFieldType_ENUM":"fftForeignKey"
+      },
+      "FloFieldMap11":{
+        "ClassName":"TFloFieldMap",
+        "Description":"COLUMN_B",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap3.Owner",
+        "FieldName":"COLUMN_B",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap12":{
+        "ClassName":"TFloFieldMap",
+        "Description":"COL_F",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap3.Owner",
+        "FieldName":"COL_F",
+        "FloFieldType_ENUM":"fftUserSet"
+      }
+    },
+    "FloViewMap4":{
+      "ClassName":"TFloViewMap",
+      "Description":"THIRD_SHEET_HEADER",
+      "BeforeMapFormula.Strings_STRINGLIST":[
+      "procedure BeforeMapEvent(var Value:Variant);  \/\/THIRD_SHEET_HEADER",
+      "begin",
+      " \/\/ Value := False;",
+      "end;"
+      ],
+      "CompiledStatus":1,
+      "FloFieldMap13":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap4.Owner",
+        "FieldName":"ID",
+        "FloFieldType_ENUM":"fftPrimaryKeyAuto"
+      },
+      "FloFieldMap14":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MASTER_ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap4.Owner",
+        "FieldName":"MASTER_ID",
+        "FloFieldType_ENUM":"fftForeignKey"
+      },
+      "FloFieldMap15":{
+        "ClassName":"TFloFieldMap",
+        "Description":"G2",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/G2",
+        "begin",
+        "  Value :=   '#39'G2 map value'#39';",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap4.Owner",
+        "FieldName":"G2",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap16":{
+        "ClassName":"TFloFieldMap",
+        "Description":"G3",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/G3",
+        "var num:integer;",
+        "",
+        "begin",
+        "  Value :=  num + 1;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap4.Owner",
+        "FieldName":"G3",
+        "FloFieldType_ENUM":"fftUserSet"
+      }
+    }
+  }
+}
