@@ -1,0 +1,769 @@
+{
+  "TFloSourceMap":{
+    "ModuleID":-1,
+    "FloUniqueID":"1CDD073F-72B3-4346-9D8D-6F05E96AB7A1",
+    "FIDS":"{60A25BE7-FDBB-4AF4-A8DB-88252F0D0F69}",
+    "FolderFIDS":"{43B0C670-FE0B-4736-9AC6-FA824309DC75}",
+    "ModuleName":"vTAB to Excel (Invoice)",
+    "Version":240,
+    "SourceType_ENUM":"fstFile",
+    "SourceID":-1,
+    "DestType_ENUM":"fstFile",
+    "DestID":-1,
+    "SourceFIDS":"{5D6AE8BE-D865-4D67-9FCA-642627FA0885}",
+    "DestFIDS":"{AE8D8192-2B52-48E0-A036-1D57573AF48F}",
+    "Initialised":true,
+    "SourceChanged":false,
+    "FloViewMap6":{
+      "ClassName":"TFloViewMap",
+      "Description":"EXCEL_INV_HEADER",
+      "LinkedDataFormula.Strings_STRINGLIST":[
+      "procedure LinkedDataEvent(var LinkedData:TdaQueryDataView);  \/\/EXCEL_INV_HEADER",
+      "begin",
+      "  LinkedData := IVA;",
+      "end;"
+      ],
+      "CompiledStatus":1,
+      "FloFieldMap485":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"ID",
+        "FloFieldType_ENUM":"fftPrimaryKeyAuto"
+      },
+      "FloFieldMap486":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MASTER_ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"MASTER_ID",
+        "FloFieldType_ENUM":"fftForeignKey"
+      },
+      "FloFieldMap487":{
+        "ClassName":"TFloFieldMap",
+        "Description":"INV_NO",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/INV_NO",
+        "begin",
+        "  Value := IVA['#39'INVOICE_NUMBER'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"INV_NO",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap488":{
+        "ClassName":"TFloFieldMap",
+        "Description":"INV_DATE",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/INV_DATE",
+        "begin",
+        "  Value := IVA['#39'INVOICE_DATE'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"INV_DATE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap489":{
+        "ClassName":"TFloFieldMap",
+        "Description":"DELIVERY_REF",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/DELIVERY_REF",
+        "begin",
+        "  Value := IVA['#39'CONSIGNMENT_REFERENCE'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"DELIVERY_REF",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap490":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ORDER_REF",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ORDER_REF",
+        "begin",
+        "  Value := IVA['#39'SUPPLIER_ORDER_NO'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"ORDER_REF",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap491":{
+        "ClassName":"TFloFieldMap",
+        "Description":"CUST_REF",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/CUST_REF",
+        "begin",
+        "  Value := IVA['#39'PURCHASE_ORDER_NO'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"CUST_REF",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap492":{
+        "ClassName":"TFloFieldMap",
+        "Description":"DUE_DATE",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"DUE_DATE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap493":{
+        "ClassName":"TFloFieldMap",
+        "Description":"PAYMENT_DAYS",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"PAYMENT_DAYS",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap494":{
+        "ClassName":"TFloFieldMap",
+        "Description":"BILLTO_CODE",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"BILLTO_CODE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap495":{
+        "ClassName":"TFloFieldMap",
+        "Description":"BILLTO_NAME",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/BILLTO_NAME",
+        "begin",
+        "  Value := IVA['#39'PURCHASE_PARTY_NAME'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"BILLTO_NAME",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap496":{
+        "ClassName":"TFloFieldMap",
+        "Description":"BILLTO_ADD1",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/BILLTO_ADD1",
+        "begin",
+        "  Value := IVA['#39'PURCHASER_ADDRESS_1'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"BILLTO_ADD1",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap497":{
+        "ClassName":"TFloFieldMap",
+        "Description":"BILLTO_ADD2",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/BILLTO_ADD2",
+        "begin",
+        "  Value := IVA['#39'PURCHASER_ADDRESS_2'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"BILLTO_ADD2",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap498":{
+        "ClassName":"TFloFieldMap",
+        "Description":"BILLTO_ADD3",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/BILLTO_ADD3",
+        "begin",
+        "  Value := IVA['#39'PURCHASER_ADDRESS_3'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"BILLTO_ADD3",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap499":{
+        "ClassName":"TFloFieldMap",
+        "Description":"BILLTO_ADD4",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/BILLTO_ADD4",
+        "begin",
+        "  Value := IVA['#39'PURCHASER_ADDRESS_4'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"BILLTO_ADD4",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap500":{
+        "ClassName":"TFloFieldMap",
+        "Description":"BILLTO_ADD5",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"BILLTO_ADD5",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap501":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SHIPTO_CODE",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SHIPTO_CODE",
+        "begin",
+        "  Value := IVA['#39'SHIPTO_PARTY_ID'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SHIPTO_CODE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap502":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SHIPTO_NAME",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SHIPTO_NAME",
+        "begin",
+        "  Value := IVA['#39'SHIPTO_PARTY_NAME'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SHIPTO_NAME",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap503":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SHIPTO_ADD1",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SHIPTO_ADD1",
+        "begin",
+        "  Value := IVA['#39'SHIPTO_ADDRESS_1'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SHIPTO_ADD1",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap504":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SHIPTO_ADD2",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SHIPTO_ADD2",
+        "begin",
+        "  Value := IVA['#39'SHIPTO_ADDRESS_2'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SHIPTO_ADD2",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap505":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SHIPTO_ADD3",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SHIPTO_ADD3",
+        "begin",
+        "  Value := IVA['#39'SHIPTO_ADDRESS_3'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SHIPTO_ADD3",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap506":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SHIPTO_ADD4",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SHIPTO_ADD4",
+        "begin",
+        "  Value := IVA['#39'SHIPTO_ADDRESS_4'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SHIPTO_ADD4",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap507":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SHIPTO_ADD5",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SHIPTO_ADD5",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap508":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SULLPIER_VENDOR_CODE",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SULLPIER_VENDOR_CODE",
+        "begin",
+        "  Value := HDR['#39'ORIGINATOR_CODE'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SULLPIER_VENDOR_CODE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap509":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SUPPLIER_NAME",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SUPPLIER_NAME",
+        "begin",
+        "  Value := IVA['#39'SUPPLIER_PARTY_NAME'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SUPPLIER_NAME",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap510":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SUPPLIER_ADD1",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SUPPLIER_ADD1",
+        "begin",
+        "  Value := IVA['#39'SUPPLIER_ADDRESS_1'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SUPPLIER_ADD1",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap511":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SUPPLIER_ADD2",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SUPPLIER_ADD2",
+        "begin",
+        "  Value := IVA['#39'SUPPLIER_ADDRESS_2'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SUPPLIER_ADD2",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap512":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SUPPLIER_ADD3",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SUPPLIER_ADD3",
+        "begin",
+        "  Value := IVA['#39'SUPPLIER_ADDRESS_3'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SUPPLIER_ADD3",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap513":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SUPPLIER_ADD4",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SUPPLIER_ADD4",
+        "begin",
+        "  Value := IVA['#39'SUPPLIER_ADDRESS_4'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SUPPLIER_ADD4",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap514":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SUPPLIER_ADD5",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"SUPPLIER_ADD5",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap515":{
+        "ClassName":"TFloFieldMap",
+        "Description":"PAYMENT_TERMS",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"PAYMENT_TERMS",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap516":{
+        "ClassName":"TFloFieldMap",
+        "Description":"HEADER_COMMENT",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"HEADER_COMMENT",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap517":{
+        "ClassName":"TFloFieldMap",
+        "Description":"GST_RATE",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/GST_RATE",
+        "begin",
+        "  Value := IVA['#39'GST_RATE'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"GST_RATE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap518":{
+        "ClassName":"TFloFieldMap",
+        "Description":"TOTAL_AMT_EX_GST",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/TOTAL_AMT_EX_GST",
+        "begin",
+        "  Value := IVA['#39'INVOICE_TOTAL'#39'].Value - IVA['#39'GST_TOTAL'#39'].Value  ;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"TOTAL_AMT_EX_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap519":{
+        "ClassName":"TFloFieldMap",
+        "Description":"TOTAL_GST",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/TOTAL_GST",
+        "begin",
+        "  Value := IVA['#39'GST_TOTAL'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"TOTAL_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap520":{
+        "ClassName":"TFloFieldMap",
+        "Description":"TOTAL_AMT_INC_GST",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/TOTAL_AMT_INC_GST",
+        "begin",
+        "  Value := IVA['#39'INVOICE_TOTAL'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"TOTAL_AMT_INC_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap521":{
+        "ClassName":"TFloFieldMap",
+        "Description":"TOT_FREIGHT_EX_GST",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/TOT_FREIGHT_EX_GST",
+        "begin",
+        "if   IVA['#39'FREIGHT_AMOUNT'#39'].Value <> 0 then",
+        "  Value :=  IVA['#39'FREIGHT_AMOUNT'#39'].Value   \/ ((100 + IVA['#39'GST_RATE'#39'].Value ) \/ 100  )  ;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"TOT_FREIGHT_EX_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap522":{
+        "ClassName":"TFloFieldMap",
+        "Description":"TOT_FREIGHT_GST",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/TOT_FREIGHT_GST",
+        "begin",
+        "",
+        "if IVA['#39'FREIGHT_AMOUNT'#39'].Value <> 0 then",
+        "  Value :=  IVA['#39'FREIGHT_AMOUNT'#39'].Value  -  D_EXCEL_INV_HEADER[TOT_FREIGHT_EX_GST'#39'].Value  ;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"TOT_FREIGHT_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap523":{
+        "ClassName":"TFloFieldMap",
+        "Description":"TOT_FREIGHT_INC_GST",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/TOT_FREIGHT_INC_GST",
+        "begin",
+        "if IVA['#39'FREIGHT_AMOUNT'#39'].Value <> 0 then",
+        "   Value := IVA['#39'FREIGHT_AMOUNT'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"TOT_FREIGHT_INC_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap524":{
+        "ClassName":"TFloFieldMap",
+        "Description":"TOT_DISC_AMT_EX_GST",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"TOT_DISC_AMT_EX_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap525":{
+        "ClassName":"TFloFieldMap",
+        "Description":"TOT_DISC_AMT",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"TOT_DISC_AMT",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap526":{
+        "ClassName":"TFloFieldMap",
+        "Description":"TOT_DISC_AMT_INC_GST",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"TOT_DISC_AMT_INC_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap527":{
+        "ClassName":"TFloFieldMap",
+        "Description":"TOTAL_PAYABLE",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/TOTAL_PAYABLE",
+        "begin",
+        "  Value := IVA['#39'INVOICE_TOTAL'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap6.Owner",
+        "FieldName":"TOTAL_PAYABLE",
+        "FloFieldType_ENUM":"fftUserSet"
+      }
+    },
+    "FloViewMap7":{
+      "ClassName":"TFloViewMap",
+      "Description":"EXCEL_INV_ITEM",
+      "LinkedDataFormula.Strings_STRINGLIST":[
+      "procedure LinkedDataEvent(var LinkedData:TdaQueryDataView);  \/\/EXCEL_INV_ITEM",
+      "begin",
+      "  LinkedData := IVB;",
+      "end;"
+      ],
+      "CompiledStatus":1,
+      "FloFieldMap528":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"ID",
+        "FloFieldType_ENUM":"fftPrimaryKeyAuto"
+      },
+      "FloFieldMap529":{
+        "ClassName":"TFloFieldMap",
+        "Description":"MASTER_ID",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"MASTER_ID",
+        "FloFieldType_ENUM":"fftForeignKey"
+      },
+      "FloFieldMap530":{
+        "ClassName":"TFloFieldMap",
+        "Description":"SUPPLIER_CODE",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/SUPPLIER_CODE",
+        "begin",
+        "if  IVB['#39'SUPPLIER_STOCK_ID'#39'].AsString <> '#39#39' then",
+        "  Value := IVB['#39'SUPPLIER_STOCK_ID'#39'].Value;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"SUPPLIER_CODE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap531":{
+        "ClassName":"TFloFieldMap",
+        "Description":"GTIN",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/GTIN",
+        "begin",
+        "if  IVB['#39'SUPPLIER_STOCK_ID'#39'].AsString <> '#39#39' then",
+        "  Value := IVB['#39'STOCK_BARCODE'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"GTIN",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap532":{
+        "ClassName":"TFloFieldMap",
+        "Description":"CUST_ITEMCODE",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/CUST_ITEMCODE",
+        "begin",
+        "if  IVB['#39'SUPPLIER_STOCK_ID'#39'].AsString <> '#39#39' then",
+        "  Value := IVB['#39'PURCHASER_STOCK_ID'#39'].Value",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"CUST_ITEMCODE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap533":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ITEM_DESCRITION",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ITEM_DESCRITION",
+        "begin",
+        "if  IVB['#39'SUPPLIER_STOCK_ID'#39'].AsString <> '#39#39' then",
+        "  Value := IVB['#39'STOCK_DESCRIPTION'#39'].Value ;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"ITEM_DESCRITION",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap534":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ITEM_UNIT_PRICE",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ITEM_UNIT_PRICE",
+        "begin",
+        "if  IVB['#39'SUPPLIER_STOCK_ID'#39'].AsString <> '#39#39' then",
+        "  Value := IVB['#39'UNIT_PRICE'#39'].Value ;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"ITEM_UNIT_PRICE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap535":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ITEM_UNITS_PER_PRICE",
+        "CompiledStatus":0,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"ITEM_UNITS_PER_PRICE",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap536":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ITEM_UOM",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ITEM_UOM",
+        "begin",
+        "if  IVB['#39'SUPPLIER_STOCK_ID'#39'].AsString <> '#39#39' then",
+        "  Value := IVB['#39'UNIT_OF_MEASURE'#39'].Value  ;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"ITEM_UOM",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap537":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ITEM_QTY_SHIPPED",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ITEM_QTY_SHIPPED",
+        "begin",
+        "if  IVB['#39'SUPPLIER_STOCK_ID'#39'].AsString <> '#39#39' then",
+        "  Value := IVB['#39'QUANTITY_SHIPPED'#39'].Value;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"ITEM_QTY_SHIPPED",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap538":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ITEM_AMT_EX_GST",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ITEM_AMT_EX_GST",
+        "begin",
+        "if  (IVB['#39'SUPPLIER_STOCK_ID'#39'].AsString <> '#39#39')",
+        "and (IVB['#39'LINE_ITEM_GST_RATE'#39'].Value  <> 0) then",
+        "    Value := IVB['#39'EXTENDED_PRICE'#39'].Value ;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"ITEM_AMT_EX_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap539":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ITEM_AMT_GST",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ITEM_AMT_GST",
+        "begin",
+        "if  (IVB['#39'SUPPLIER_STOCK_ID'#39'].AsString <> '#39#39')",
+        "and (IVB['#39'LINE_ITEM_GST_RATE'#39'].Value  <> 0) then",
+        "  Value := IVB['#39'LINE_ITEM_GST_VALUE'#39'].Value   ;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"ITEM_AMT_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap540":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ITEM_AMT_INC_GST",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ITEM_AMT_INC_GST",
+        "begin",
+        "  Value := D_EXCEL_INV_ITEM['#39'ITEM_AMT_EX_GST'#39'].Value   +  D_EXCEL_INV_ITEM['#39'ITEM_AMT_GST'#39'].Value   ;",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"ITEM_AMT_INC_GST",
+        "FloFieldType_ENUM":"fftUserSet"
+      },
+      "FloFieldMap541":{
+        "ClassName":"TFloFieldMap",
+        "Description":"ITEM_COMMENTS",
+        "OnMapFormula.Strings_STRINGLIST":[
+        "procedure OnMapEvent(var Value:Variant);  \/\/ITEM_COMMENTS",
+        "begin",
+        "  IVB.Next; \/\/move to next line.",
+        "",
+        "  Local1 := '#39#39';",
+        "  ",
+        "  While (not IVB.EOF) and (IVB['#39'SUPPLIER_STOCK_ID'#39'].Value = '#39#39') Do",
+        "     begin",
+        "       Local1 := Local1 + IVB['#39'STOCK_DESCRIPTION'#39'].AsString + #13#10;",
+        "       IVB.Next;",
+        "     end;",
+        "     Value := Local1;",
+        "     ",
+        "  If not IVB.EOF Then",
+        "    IVB.Prior; \/\/move back 1 record.",
+        "end;"
+        ],
+        "CompiledStatus":1,
+        "ViewMap_ENUM":"FloViewMap7.Owner",
+        "FieldName":"ITEM_COMMENTS",
+        "FloFieldType_ENUM":"fftUserSet"
+      }
+    }
+  }
+}
