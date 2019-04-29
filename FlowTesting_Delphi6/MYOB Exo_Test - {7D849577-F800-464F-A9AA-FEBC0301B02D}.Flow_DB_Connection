@@ -1,10 +1,11 @@
 {
   "TFloDBCon":{
+    "FloModuleType_ENUM":"fmtDBConnection",
     "ModuleID":-1,
     "FloUniqueID":"FEA05B37-604E-4A7B-81DF-92892956D7C2",
     "FIDS":"{7D849577-F800-464F-A9AA-FEBC0301B02D}",
     "FolderFIDS":"{00000000-0000-0000-0000-000000000000}",
-    "ModuleName":"MYOB Exo (1)",
+    "ModuleName":"MYOB Exo_Test",
     "Version":240,
     "ImportAction_ENUM":"iaAddOrIgnore",
     "ConnectionType_ENUM":"ctMSSQL",
