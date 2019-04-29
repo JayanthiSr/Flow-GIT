@@ -1,0 +1,7 @@
+{
+  "TFloActionNotification":{
+    "FIDS":"{720A05C1-24B4-4070-A233-5F800853958F}",
+    "FloModuleType_ENUM":"fmtActionNotification",
+    "UseDefaultEmail":"true"
+  }
+}
